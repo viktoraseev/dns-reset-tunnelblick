@@ -1,4 +1,4 @@
-"menu.repair" = "Починить сеть после Tunnelblick";
+"menu.repair" = "Перезапустить Tunnelblick";
 "menu.quit" = "Выход";
 "status.prefix" = "Состояние: %@";
 "status.ready" = "Готово к запуску";

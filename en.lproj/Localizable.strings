@@ -1,4 +1,4 @@
-"menu.repair" = "Repair network after Tunnelblick";
+"menu.repair" = "Restart Tunnelblick";
 "menu.quit" = "Quit";
 "status.prefix" = "Status: %@";
 "status.ready" = "Ready";
