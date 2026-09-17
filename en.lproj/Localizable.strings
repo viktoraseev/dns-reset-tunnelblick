@@ -1,0 +1,17 @@
+"menu.repair" = "Repair network after Tunnelblick";
+"menu.quit" = "Quit";
+"status.prefix" = "Status: %@";
+"status.ready" = "Ready";
+"status.waitingTouchID" = "Waiting for Touch ID…";
+"status.authorization" = "Authorization";
+"status.success" = "Network restored; Tunnelblick launched";
+"status.launchFailed" = "Network restored, but Tunnelblick did not launch: %@";
+"step.launchTunnelblick" = "Launching Tunnelblick";
+"error.scriptMissing" = "Error: reset.sh is missing from the app";
+"error.exitCode" = "Exit code %d";
+"error.step" = "Error during “%@”: %@";
+"error.generic" = "Error: %@";
+"accessibility.repairFailed" = "Network repair failed";
+"accessibility.repaired" = "Network restored";
+"accessibility.launchFailed" = "Tunnelblick launch failed";
+"tooltip.idle" = "Repair Tunnelblick network";

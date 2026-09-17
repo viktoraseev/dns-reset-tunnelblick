@@ -1,0 +1,17 @@
+"menu.repair" = "Починить сеть после Tunnelblick";
+"menu.quit" = "Выход";
+"status.prefix" = "Состояние: %@";
+"status.ready" = "Готово к запуску";
+"status.waitingTouchID" = "Ожидание Touch ID…";
+"status.authorization" = "Авторизация";
+"status.success" = "Сеть восстановлена, Tunnelblick запущен";
+"status.launchFailed" = "Сеть восстановлена, но Tunnelblick не запустился: %@";
+"step.launchTunnelblick" = "Запускаю Tunnelblick";
+"error.scriptMissing" = "Ошибка: reset.sh не найден в приложении";
+"error.exitCode" = "Код выхода %d";
+"error.step" = "Ошибка на этапе «%@»: %@";
+"error.generic" = "Ошибка: %@";
+"accessibility.repairFailed" = "Ошибка восстановления сети";
+"accessibility.repaired" = "Сеть восстановлена";
+"accessibility.launchFailed" = "Ошибка запуска Tunnelblick";
+"tooltip.idle" = "Восстановление сети после Tunnelblick";
