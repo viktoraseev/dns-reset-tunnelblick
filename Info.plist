@@ -5,7 +5,7 @@
     <key>CFBundleExecutable</key>
     <string>TunnelblickReset</string>
     <key>CFBundleIdentifier</key>
-    <string>ru.viktoraseev.tunnelblick-reset</string>
+    <string>ru.viktoraseev.dns-reset</string>
     <key>CFBundleName</key>
     <string>Tunnelblick Reset</string>
     <key>CFBundleDisplayName</key>

@@ -73,7 +73,7 @@ final class TunnelblickResetDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
-        statusItem.autosaveName = "ru.viktoraseev.tunnelblick-reset"
+        // A saved position can place the item outside the visible menu bar.
         showMonogramIcon()
         statusItem.button?.toolTip = localized("tooltip.idle")
         statusItem.isVisible = true
