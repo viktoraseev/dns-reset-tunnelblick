@@ -16,8 +16,9 @@ final class TunnelblickResetDelegate: NSObject, NSApplicationDelegate {
     }
 
     private func showMonogramIcon(progress: Double? = nil) {
-        let icon = NSImage(size: NSSize(width: 18, height: 18), flipped: false) { _ in
-            let frame = NSRect(x: 1.4, y: 2.9, width: 15.2, height: 12.2)
+        let icon = NSImage(size: NSSize(width: 20, height: 20), flipped: false) { _ in
+            NSGraphicsContext.current?.cgContext.translateBy(x: 1, y: 1)
+            let frame = NSRect(x: 0.4, y: 1.9, width: 17.2, height: 14.2)
             let cornerRadius: CGFloat = 3
             let border = NSBezierPath(roundedRect: frame, xRadius: cornerRadius, yRadius: cornerRadius)
             border.lineWidth = 1.4
