@@ -2,7 +2,7 @@
 
 [Русский](README.ru.md)
 
-Tunnelblick Reset is a macOS menu bar app that repairs the network after Tunnelblick hangs. Its single-slot icon shows a large `T` and a small `b`; the ring indicates progress. The menu shows the current step and a disabled **Status** line. After a successful repair, the app relaunches Tunnelblick, shows a checkmark for 5 seconds, then returns to the monogram.
+Tunnelblick Reset is a macOS menu bar app that repairs the network after Tunnelblick hangs. Its single-slot icon shows a large `T` and a small `b`; the rounded border indicates progress. The menu shows the current step and a disabled **Status** line. After a successful repair, the app relaunches Tunnelblick, shows a checkmark for 5 seconds, then returns to the monogram.
 
 The app and script support English and Russian. The app follows macOS language preferences; the standalone script follows the shell locale or accepts `--lang en|ru`.
 

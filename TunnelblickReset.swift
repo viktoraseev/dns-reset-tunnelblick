@@ -17,23 +17,24 @@ final class TunnelblickResetDelegate: NSObject, NSApplicationDelegate {
 
     private func showMonogramIcon(progress: Double? = nil) {
         let icon = NSImage(size: NSSize(width: 18, height: 18), flipped: false) { _ in
-            let center = NSPoint(x: 9, y: 9)
-            let radius: CGFloat = 7.3
-            let ring = NSBezierPath(ovalIn: NSRect(x: center.x - radius, y: center.y - radius,
-                                                   width: radius * 2, height: radius * 2))
-            ring.lineWidth = 1.4
-            let fullRing = progress.map { $0 >= 1 } ?? true
-            NSColor.black.withAlphaComponent(fullRing ? 1 : 0.25).setStroke()
-            ring.stroke()
+            let frame = NSRect(x: 1.4, y: 2.9, width: 15.2, height: 12.2)
+            let cornerRadius: CGFloat = 3
+            let border = NSBezierPath(roundedRect: frame, xRadius: cornerRadius, yRadius: cornerRadius)
+            border.lineWidth = 1.4
+            let complete = progress.map { $0 >= 1 } ?? true
+            NSColor.black.withAlphaComponent(complete ? 1 : 0.25).setStroke()
+            border.stroke()
 
             if let progress, progress > 0 && progress < 1 {
-                let arc = NSBezierPath()
-                arc.appendArc(withCenter: center, radius: radius, startAngle: 90,
-                              endAngle: 90 - 360 * progress, clockwise: true)
-                arc.lineWidth = 1.8
-                arc.lineCapStyle = .round
+                let perimeter = 2 * (frame.width + frame.height - 4 * cornerRadius)
+                    + 2 * .pi * cornerRadius
+                let progressBorder = NSBezierPath(roundedRect: frame, xRadius: cornerRadius, yRadius: cornerRadius)
+                progressBorder.lineWidth = 1.8
+                progressBorder.lineCapStyle = .round
+                let dash: [CGFloat] = [perimeter * CGFloat(progress), perimeter]
+                progressBorder.setLineDash(dash, count: dash.count, phase: 0)
                 NSColor.black.setStroke()
-                arc.stroke()
+                progressBorder.stroke()
             }
 
             NSColor.black.setFill()
