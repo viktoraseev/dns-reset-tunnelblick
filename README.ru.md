@@ -8,9 +8,14 @@
 
 Скрипт останавливает Tunnelblick, `tunnelblickd` и запущенный им OpenVPN, снимает `net.tunnelblick.openvpn.process-network-changes`, удаляет DNS-ключи из `scutil`, перезапускает Wi-Fi, очищает кэш резолвера и проверяет DNS. Если VPN-процессы остаются запущенными, скрипт завершится с ошибкой. При ошибке после отключения Wi-Fi он попытается включить Wi-Fi обратно.
 
-## Состояние релиза
+## Установка релиза
 
-**Изменения в `main` ещё не выпущены.** Текущий [релиз 1.0.0](https://github.com/viktoraseev/dns-reset-tunnelblick/releases/tag/v1.0.0) и [Homebrew cask](https://github.com/viktoraseev/homebrew) пока устанавливают прежнее `DNS Reset.app` со старым значком и интерфейсом только на русском. Cask обновится вместе со следующим релизом.
+В [релизе 1.1.0](https://github.com/viktoraseev/dns-reset-tunnelblick/releases/tag/v1.1.0) есть отдельные архивы для Apple Silicon и Intel. Установить приложение можно через [Homebrew cask](https://github.com/viktoraseev/homebrew):
+
+```sh
+brew tap viktoraseev/homebrew https://github.com/viktoraseev/homebrew.git
+brew install --cask viktoraseev/homebrew/dns-reset-tunnelblick
+```
 
 ## Сборка текущих исходников
 

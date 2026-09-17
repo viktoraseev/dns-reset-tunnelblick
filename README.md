@@ -8,9 +8,14 @@ The app and script support English and Russian. The app follows macOS language p
 
 The script stops Tunnelblick, `tunnelblickd`, and Tunnelblick's OpenVPN process; unloads `net.tunnelblick.openvpn.process-network-changes`; removes DNS keys from `scutil`; restarts Wi-Fi; flushes the resolver cache; and checks DNS. It fails if the VPN processes remain. If a later step fails while Wi-Fi is off, it attempts to turn Wi-Fi back on.
 
-## Release status
+## Install the release
 
-**The changes on `main` are not released yet.** The current [1.0.0 release](https://github.com/viktoraseev/dns-reset-tunnelblick/releases/tag/v1.0.0) and [Homebrew cask](https://github.com/viktoraseev/homebrew) still install the previous `DNS Reset.app`, with its previous icon and Russian-only interface. The cask will be updated when a new release is made.
+The [1.1.0 release](https://github.com/viktoraseev/dns-reset-tunnelblick/releases/tag/v1.1.0) has separate Apple Silicon and Intel archives. Install it with the [Homebrew cask](https://github.com/viktoraseev/homebrew):
+
+```sh
+brew tap viktoraseev/homebrew https://github.com/viktoraseev/homebrew.git
+brew install --cask viktoraseev/homebrew/dns-reset-tunnelblick
+```
 
 ## Build the current source
 
