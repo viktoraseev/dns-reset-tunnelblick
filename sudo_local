@@ -1,0 +1,2 @@
+# Enable Touch ID for sudo; password authentication remains available.
+auth       sufficient     pam_tid.so
